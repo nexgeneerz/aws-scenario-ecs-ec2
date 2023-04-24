@@ -60,6 +60,10 @@ been finished. The ECS console should look like this:
 
 ![ECS Console](docs/ecs-console.png)
 
+You should now be able to see the running demo app under the domain you have configured, for example 
+`dev.service.example.com` (replace `example.com` with your domain). The setup is using an HTTPS connection, even if you 
+call `http://dev.service.example.com`, you are still being redirected to `https://dev.service.example.com`.
+
 ## Trigger new deployment
 
 This demo project shows a simple React/NextJS service that serves as an example for a more complex service that can be 
