@@ -1,0 +1,10 @@
+.idea
+.env*
+**.terraform*
+**.DS_Store
+./*.tfstate
+terraform.tfstate*
+**.tf.plan
+.terraform.log
+**.terraform.lock.hcl
+infra/.config
