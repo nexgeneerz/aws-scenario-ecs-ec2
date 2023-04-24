@@ -1,6 +1,8 @@
 # AWS ECS on EC2 using Terraform
 
-This sample project is part of the "Cloud Computing on AWS" article series and represents a complete, production-grade setup of a container-based application on ECS on EC2. You can find the related article with in-depth information about this project here.
+This sample project is part of the "Cloud Computing on AWS" article series and represents a complete, production-grade 
+setup of a container-based application on ECS on EC2. [You can find the related article with in-depth 
+information about this project here](https://nexgeneerz.io/aws-computing-with-ecs-ec2-terraform/).
 
 The demo project helps you to get a basic understanding of how ECS on EC2 works and what is possible with it. 
 
