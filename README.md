@@ -21,18 +21,24 @@ Which would be:
 - Install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) on your machine
 - Buy and setup a top level domain in your AWS account that you can use for this demonstration (This step will incur costs for you!)
 - Make sure you have a Route 53 Hosted Zone for this top level domain and note down the Hosted Zone ID
+- You will need an SSH public and private key 
 - Make sure you have `make` installed
 - Make sure you have the `openssl` package installed (used for random hash generation)
 
 ## Getting started
 
-All commands are available via Makefile. Before you start, you need to add some definitions to the Makefile.
+All commands are available via Makefile. Before you start, you need to add some definitions to the config file.
+Generate the config file:
 
-- Set `TF_VAR_domain_name` to your top level domain (TLD) at AWS, plus a subdomain you want to usee for this tutorial (for example `service.example.com`)
-- Set `TF_VAR_tld_zone_id` to the Route 53 Hosted Zone ID of your top level domain
-- Set `TF_VAR_aws_access_key_id` and `TF_VAR_aws_secret_access_key` with credentials with permissions to create resources in AWS
+`make bootstrap`
+
+Now set the appropriate values for the config variables:
+- Set `DOMAIN_NAME` to your top level domain (TLD) at AWS, plus a subdomain you want to usee for this tutorial (for example `service.example.com`)
+- Set `TLD_ZONE_ID` to the Route 53 Hosted Zone ID of your top level domain
+- Set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` with credentials with permissions to create resources in AWS
 - Set `TF_VAR_public_ec2_key` with the public key of your SSH key (you must own the private key to be able to login to the EC2 instances)
-- Optional: set `TF_VAR_region` to use a different region (default is `eu-central-1`)
+
+- Optional: set `REGION` to use a different region (default is `eu-central-1`)
 
 After adding these variables, you are ready to start:
 

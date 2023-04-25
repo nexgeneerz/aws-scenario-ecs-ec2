@@ -1,5 +1,5 @@
 .idea
-.env*
+.env
 **.terraform*
 **.DS_Store
 ./*.tfstate
